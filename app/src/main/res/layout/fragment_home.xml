@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.example.nirav.lyearn.HomeFragment"
+             android:background="@color/fragmentBackgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelUpcomingCards"
+            android:layout_marginTop="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/upcoming_card_label"
+            android:background="@color/myCardColor"
+            android:textColor="@color/secondaryFontColor"/>
+
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_home"
+            android:layout_below="@+id/labelUpcomingCards"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

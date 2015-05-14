@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Lyearn</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="configuration_error">Error in configuration</string>
+    <string name="title_activity_main">Profile</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="title_activity_course">CourseActivity</string>
+    <string name="key_name">name</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_card_holder">CardHolder</string>
+    <string name="btn_logout_from_google">Logout</string>
+    <string name="play_services_error">Play Service Error</string>
+    <string name="close">Close</string>
+    <string name="SIGN_OUT">signing out from home activity</string>
+    <string name="signin_other_error">There was an issue with sign in, please try again later</string>
+    <string name="title_activity_video_view">VideoViewActivity</string>
+    <string name="title_activity_edit_profile">Edit Profile</string>
+    <string name="username_field_hint">Name</string>
+    <string name="role_field_hint">Role</string>
+    <string name="skypeid_field_hint">Skype ID</string>
+    <string name="contactnumber_field_hint">Contact Number</string>
+    <string name="username">Nirav Faraswami</string>
+    <string name="user_role">Web Developer</string>
+    <string name="user_skypeid">niravfaraswami</string>
+    <string name="user_contact_number">+91%1$s9904012174</string>
+    <string name="upcoming_card_label">Upcoming Cards</string>
+
+
+    <!-- multi part upload-->
+    <string name="btnTakePicture">Capture Image</string>
+    <string name="btnRecordVideo">Record Video</string>
+    <string name="or">(or)</string>
+    <string name="btnUploadToServer">Upload to Server</string>
+    <string name="title_activity_text_card">TextCardActivity</string>
+    <string name="title_activity_pdfview">PDFViewActivity</string>
+
+
+
+</resources>

@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/editProfileLayout"
+                tools:context="com.example.nirav.lyearn.EditProfileActivity">
+
+    <include
+        android:id="@+id/toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_actionbar">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#1f000000"
+                android:layout_height="0dp"
+                android:id="@+id/separator"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/system_icon_size"
+                    android:layout_height="@dimen/system_icon_size"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/cameraIcon"
+                    android:src="@drawable/ic_camera"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="@dimen/edit_text_left_margin"
+                    android:id="@+id/profilePhoto"/>
+
+                <Button
+                    android:layout_width="80dp"
+                    android:layout_height="32dp"
+                    android:text="CHANGE"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="top"
+                    android:id="@+id/changePhoto"
+                    android:background="@android:color/white"
+                    android:elevation="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="@dimen/system_icon_size"
+                    android:layout_height="@dimen/system_icon_size"
+                    android:layout_marginLeft="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/contactNameIcon"
+                    android:src="@drawable/ic_people"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/contactNameTextField"
+                    android:layout_marginLeft="@dimen/edit_text_left_margin"
+                    android:hint="@string/username_field_hint"
+                    android:inputType="textPersonName"
+                    android:text="@string/username"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="@dimen/system_icon_size"
+                android:layout_height="@dimen/system_icon_size"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/roleIcon"
+                android:src="@drawable/ic_role"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/roleTextField"
+                android:layout_marginLeft="@dimen/edit_text_left_margin"
+                android:hint="@string/role_field_hint"
+                android:inputType="text"
+                android:text="@string/user_role"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:layout_width="@dimen/system_icon_size"
+                android:layout_height="@dimen/system_icon_size"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/skypeIdIcon"
+                android:src="@drawable/ic_skype"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/skypeIdTextField"
+                android:layout_marginLeft="@dimen/edit_text_left_margin"
+                android:hint="@string/skypeid_field_hint"
+                android:inputType="text"
+                android:text="@string/user_skypeid"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+             <ImageView
+                 android:layout_width="@dimen/system_icon_size"
+                 android:layout_height="@dimen/system_icon_size"
+                 android:layout_marginLeft="16dp"
+                 android:layout_gravity="center_vertical"
+                 android:id="@+id/contactIdsIcon"
+                 android:src="@drawable/ic_call"/>
+
+             <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactNumberTextField"
+                android:layout_marginLeft="@dimen/edit_text_left_margin"
+                android:hint="@string/contactnumber_field_hint"
+                android:inputType="text"
+                android:text="@string/user_contact_number"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
